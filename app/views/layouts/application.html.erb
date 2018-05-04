@@ -8,7 +8,36 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>  
-    <%= yield %>
+	<link rel="stylesheet" href="../../../app/assets/stylesheets/posts.css">
+  <body>
+		<div class="header">
+ 			<li><a href=""><img src=""></a></li>
+			<li class="title"><h1>Engineer SNS</h1></li>
+			<div class="keyword">
+				<form action="" method="">
+					<li><input type="search" name="search" placeholder="キーワードを入力"></li>
+					<li><input type="submit" name="submit" value="検索"></li>
+				</form>
+			</div>
+			<div class="head">
+				<li><input type="button" value="コミュニティ一覧" onclick=""><li>
+<!--				<li><input type="button" value="投稿する" onclick=""></li>-->
+				<li><%= link_to '投稿する', new_post_path %></li>
+			</div>
+		</div>
+		<div id="sideBar" align="right">
+			<a href=""><img src=""></a>
+			<ul>
+				<li><a href="#trend">トレンド</a></li>
+				<li><a href="#like">お気に入り</a></li>
+				<li><a href="#tagFeed">タグフィード</a></li>
+				<li><a href="#userAccess">ユーザーアクセスランキング</a></li>
+				<li><a href="#tagRank">タグランキング</a></li>
+			</ul>
+		</div>
+		<main>
+    	<%= yield %>
+		</main>
+		<div class="clear"></div>
   </body>
 </html>
