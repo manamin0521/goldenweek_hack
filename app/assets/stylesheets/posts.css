@@ -42,7 +42,7 @@ ul {
 	list-style-type: none;
 	background-color: #eeeeee;
 }
-li input {
+li a {
 	display: block;
 	padding: 8px 16px;
 	text-decoration: none;
@@ -54,12 +54,11 @@ li {
 li:last-child {
 	border-bottom: none;
 }
-li input.active {
+li a.active {
 	color: #ffffff;
 	background-color: #da3c41;
 }
-li input:hover:not(.active) {
+li a:hover:not(.active) {
 	color: #ffffff;
 	background-color: #1b2538;
 }
-
