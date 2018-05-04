@@ -6,6 +6,11 @@
 </p>
 
 <p>
+  <strong>Image:</strong>
+  <%= image_tag @post.image.to_s, :size => "300x200" %>
+</p>
+
+<p>
   <strong>Body:</strong>
   <%= @post.body %>
 </p>
