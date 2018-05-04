@@ -34,6 +34,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'carrierwave'
 gem 'rmagick', require: 'RMagick'
 
+gem 'omniauth'
+gem 'omniauth-twitter'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
