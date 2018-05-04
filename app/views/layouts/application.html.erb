@@ -23,6 +23,7 @@
 				<li><input type="button" value="コミュニティ一覧" onclick=""><li>
 <!--				<li><input type="button" value="投稿する" onclick=""></li>-->
 				<li><%= link_to '投稿する', new_post_path %></li>
+        <li><%= link_to 'Twitterでログイン', '/auth/twitter' %></li>
 			</div>
 		</div>
 		<div id="sideBar" align="right">
@@ -35,9 +36,16 @@
 				<li><a href="#tagRank">タグランキング</a></li>
 			</ul>
 		</div>
-		<main>
-    	<%= yield %>
-		</main>
+    <div class="container">
+      <% if flash[:notice] %>
+        <div class="alert alert-success">
+          <%= flash[:notice] %>
+        </div>
+      <% end %>
+    </div>
+    <main>
+      <%= yield %>
+    </main>
 		<div class="clear"></div>
   </body>
 </html>
