@@ -1,3 +1,14 @@
+.header li{
+	float: left;
+	list-style-type: none;
+}
+.header{
+	padding:
+	height: 100px;
+	display: flex;
+	align-items: center;
+}
+
 /*
 ul {
 	width: 200px;
@@ -6,7 +17,6 @@ ul {
 	list-style-type: none;
 	background-color: #eeeeee;
 }
-*/
 li input {
 	display: block;
 	padding: 8px 16px;
@@ -27,3 +37,4 @@ li input:hover:not(.active) {
 	color: #ffffff;
 	background-color: #1b2538;
 }
+*/
