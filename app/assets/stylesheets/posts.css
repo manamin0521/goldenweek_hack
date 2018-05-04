@@ -2,13 +2,38 @@
 	float: left;
 	list-style-type: none;
 }
-.header{
-	padding:
+
+li .title{
+	padding: 10px 10px 10px 10px;
+}
+
+.headTitle{
 	height: 100px;
 	display: flex;
 	align-items: center;
 }
 
+.headTitle li {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.header{
+	height: 100px;
+	display: flex;
+	align-items: center;
+	border-bottom:solid;
+}
+
+.keyword{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.head{
+	padding-left: 700px;
+	padding-right: 50px;
+}
 /*
 ul {
 	width: 200px;
