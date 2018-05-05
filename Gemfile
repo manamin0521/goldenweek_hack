@@ -37,6 +37,11 @@ gem 'rmagick', require: 'RMagick'
 gem 'omniauth'
 gem 'omniauth-twitter'
 
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
+gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
+gem 'bootstrap-sass'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

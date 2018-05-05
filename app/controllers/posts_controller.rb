@@ -5,6 +5,9 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all
+    # if flash[:notice]
+    #   @user = User.find(:id)
+    # end
   end
 
   # GET /posts/1
