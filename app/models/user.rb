@@ -1,13 +1,13 @@
 class User < ApplicationRecord
   has_many :posts
-  
+
   #引数に関連するユーザーが存在すればそれを返し、存在しまければ新規に作成する
   def self.find_or_create_from_auth_hash(auth_hash)
 #OmniAuthで取得した各データを代入していく
     provider = auth_hash[:provider]
     uid = auth_hash[:user_id]
     nickname = auth_hash[:info][:nickname]
-    image_url = auth_hash[:info][:image]
+    image_url = auth_hash[:info][:image].to_s.sub('normal', 'bigger')
 
     User.find_or_create_by(provider: provider, user_id: uid) do |user|
       user.nickname = nickname
