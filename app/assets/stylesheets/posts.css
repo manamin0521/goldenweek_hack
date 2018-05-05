@@ -47,6 +47,7 @@ main{
 	height: 900px;
 }
 
+/* なく低域ガス
 ul {
 	width: 200px;
 	margin: 0;
@@ -54,6 +55,7 @@ ul {
 	list-style-type: none;
 	background-color: #eeeeee;
 }
+*/
 li a {
 	display: block;
 	padding: 8px 16px;
@@ -68,14 +70,18 @@ li {
 li:last-child {
 	border-bottom: none;
 }
+/*
 li a.active {
 	color: #ffffff;
 	background-color: #da3c41;
 }
+*/
+/*
 li a:hover:not(.active) {
 	color: #ffffff;
 	background-color: #1b2538;
 }
+*/
 
 .form{
 	text-align: center;
@@ -86,8 +92,10 @@ h1{
 .actions{
 
 }
+/*
 .image{
 	text-align: left: !important;
+*/
 }
 table.form {
 	width: 500px;
@@ -137,9 +145,11 @@ label {
   border: 1px solid #fff;
 }
 
+/*
 label:hover {
   background: #555;
 }
+*/
 
 input[type="checkbox"].on-off{
   display: none;
@@ -167,4 +177,37 @@ input[type="checkbox"].on-off + ul{
 
 input[type="checkbox"].on-off:checked + ul{
   height: 200px;
+}
+
+p {
+	
+}
+p.name{
+	font-size: 30px;
+	width: 5000px;
+	text-align: center;
+  padding: 20px;
+  display: block;
+  margin: 0;
+  border: 1px solid #fff;
+}
+p.image{
+	padding-left: 100px;
+	float: left;
+}
+
+p.body{
+	padding-left: 420px;
+/*
+	float: right;
+	padding-left: 30px;
+*/
+}
+.image_body{
+	overflow: hidden;
+}
+.tec_point_link{
+	overflow: hidden;
+/*	text-align: center;*/
+	padding-left: 100px;
 }
