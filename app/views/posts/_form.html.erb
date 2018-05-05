@@ -11,38 +11,59 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :image %>
-    <%= form.file_field :image %>
-  </div>
-
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :post_name %>
-  </div>
-
-
-  <div class="field">
-    <%= form.label :body %>
-    <%= form.text_area :body, id: :post_body %>
-  </div>
-
-  <div class="field">
-    <%= form.label :tec %>
-    <%= form.text_area :tec, id: :post_tec %>
-  </div>
-
-  <div class="field">
-    <%= form.label :point %>
-    <%= form.text_area :point, id: :post_point %>
-  </div>
-
-  <div class="field">
-    <%= form.label :link %>
-    <%= form.text_area :link, id: :post_link %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+<div class="form">
+	<table>
+			<tbody>
+				
+					<div class="field">
+						<tr>
+							<th><%= form.label :TOP画像, class:"image_label" %></th>
+							<td><%= form.file_field :image, class:"image" %></td>
+						</tr>	
+					</div>
+				
+				
+				<tr>
+					<div class="field">
+						<th><%= form.label :サービス名 %></th>
+						<td><%= form.text_field :name, id: :post_name %></td>
+					</div>
+				</tr>
+				
+				<tr>
+					<div class="field">
+						<th><%= form.label :どんなサービス？ %></th>
+						<td><%= form.text_area :body, id: :post_body %></td>
+					</div>
+				</tr>
+				
+				<tr>
+					<div class="field">
+						<th><%= form.label :どんな技術が使われている？ %></th>
+						<td><%= form.text_area :tec,size: "20×10",id: :post_tec %></td>
+					</div>
+				</tr>
+				
+				<tr>
+					<div class="field">
+						<th><%= form.label :どこがオススメ？ %></th>
+						<td><%= form.text_area :point, id: :post_point %></td>
+					</div>
+				</tr>
+				
+				<tr>
+					<div class="field">
+						<th><%= form.label :LINK %></th>
+						<td><%= form.text_area :link, id: :post_link %></td>
+					</div>
+				</tr>	
+				
+				<tr>
+					<div class="actions">
+						<th></th>
+						<td><%= form.submit %></td>
+					</div>
+				</tr>
+		</tbody>
+	</table>				
 <% end %>

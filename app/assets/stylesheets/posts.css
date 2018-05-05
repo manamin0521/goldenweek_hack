@@ -41,11 +41,13 @@ main{
 	margin: 33px;
 }
 
-#sideBar{
+.sideBar{
 	width: 250px;
 	float: right;
+	height: 900px;
 }
 
+/* なく低域ガス
 ul {
 	width: 200px;
 	margin: 0;
@@ -53,11 +55,13 @@ ul {
 	list-style-type: none;
 	background-color: #eeeeee;
 }
+*/
 li a {
 	display: block;
 	padding: 8px 16px;
 	text-decoration: none;
 	color: #000000;
+	overflow: hidden;
 }
 li {
 	text-align: center;
@@ -66,11 +70,144 @@ li {
 li:last-child {
 	border-bottom: none;
 }
+/*
 li a.active {
 	color: #ffffff;
 	background-color: #da3c41;
 }
+*/
+/*
 li a:hover:not(.active) {
 	color: #ffffff;
 	background-color: #1b2538;
+}
+*/
+
+.form{
+	text-align: center;
+}
+h1{
+	
+}
+.actions{
+
+}
+/*
+.image{
+	text-align: left: !important;
+*/
+}
+table.form {
+	width: 500px;
+	margin: 0 auto;
+	border-collapse: separate;
+	border-spacing: 0px 15px;
+	font-size: 12px;
+}
+table.form th,
+table.form td {
+	padding: 10px;
+}
+
+table.form th {
+	background: #295890;
+	vertical-align: middle;
+	text-align: left;
+	width: 100px;
+	overflow: visible;
+	position: relative;
+	color: #fff;
+	font-weight: normal;
+	font-size: 15px;
+}
+.backSpace{
+	text-align: center:!important;
+}
+body {
+  margin: 0;
+  background: #f0f0f0;
+}
+
+.menu {
+  height: 500px;
+  width: 500px;
+  margin: 100px auto;
+  padding: 50px;
+  background: #fff;
+}
+
+label {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  display: block;
+  margin: 0;
+  border: 1px solid #fff;
+}
+
+/*
+label:hover {
+  background: #555;
+}
+*/
+
+input[type="checkbox"].on-off{
+  display: none;
+}
+
+.sideBar ul {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sideBar li {
+  padding: 5px;
+}
+
+input[type="checkbox"].on-off + ul{
+  height: 0;
+  overflow: hidden;
+}
+
+input[type="checkbox"].on-off:checked + ul{
+  height: 200px;
+}
+
+p {
+	
+}
+p.name{
+	font-size: 30px;
+	width: 5000px;
+	text-align: center;
+  padding: 20px;
+  display: block;
+  margin: 0;
+  border: 1px solid #fff;
+}
+p.image{
+	padding-left: 100px;
+	float: left;
+}
+
+p.body{
+	padding-left: 420px;
+/*
+	float: right;
+	padding-left: 30px;
+*/
+}
+.image_body{
+	overflow: hidden;
+}
+.tec_point_link{
+	overflow: hidden;
+/*	text-align: center;*/
+	padding-left: 100px;
 }
