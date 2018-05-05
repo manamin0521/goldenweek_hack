@@ -92,11 +92,11 @@ h1{
 .actions{
 
 }
-/*
-.image{
+
+/*.image{
 	text-align: left: !important;
-*/
-}
+}*/
+
 table.form {
 	width: 500px;
 	margin: 0 auto;
@@ -121,8 +121,9 @@ table.form th {
 	font-size: 15px;
 }
 .backSpace{
-	text-align: center:!important;
+	text-align: center !important;
 }
+
 body {
   margin: 0;
   background: #f0f0f0;
