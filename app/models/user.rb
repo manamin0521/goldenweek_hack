@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  has_many :posts
+  
   #引数に関連するユーザーが存在すればそれを返し、存在しまければ新規に作成する
   def self.find_or_create_from_auth_hash(auth_hash)
 #OmniAuthで取得した各データを代入していく

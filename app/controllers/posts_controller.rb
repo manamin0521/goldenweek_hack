@@ -5,9 +5,10 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all
-    # if flash[:notice]
-    #   @user = User.find(:id)
-    # end
+    if session[:user_id]
+      @user = User.find_by(id: session[:user_id])
+      binding.pry
+    end
   end
 
   # GET /posts/1
