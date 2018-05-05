@@ -36,8 +36,12 @@
 				<input type="checkbox" id="Panel1" class="on-off" checked/>
 <!--					<li class="like"><a href="#trend">トレンド</a>-->
 					<ul>
-						<li>aaa</li>
-					</ul>
+            <% if @posts %>
+  						<% @posts.each do |post| %>
+                  <li><%= post.name %></li>
+              <% end %>
+            <% end %>
+					</ul> 
 			
 				<label for="Panel2">お気に入り</label>
 				<input type="checkbox" id="Panel2" class="on-off" checked/>
@@ -58,7 +62,11 @@
 <!--				<li class="userAccess"><a href="#userAccess">ユーザーアクセスランキング
 </a>-->
 					<ul>
-						<li>aaa</li>
+            <% if @users %>
+  						<% @users.each do |user| %>
+                  <li><%= user.nickname %></li>
+              <% end %>
+            <% end %>
 					</ul>
 		
 				<label for="Panel5">タグランキング</label>

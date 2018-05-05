@@ -1,6 +1,5 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
-  before_action :check_login
 
   # GET /posts
   # GET /posts.json
@@ -72,11 +71,4 @@ class PostsController < ApplicationController
     def post_params
       params.require(:post).permit(:name, :image, :body, :tec, :point, :link)
     end
-
-    def check_login
-      if session[:user_id]
-        @user = User.find_by(id: session[:user_id])
-      end
-    end
-
 end
