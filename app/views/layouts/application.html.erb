@@ -25,15 +25,44 @@
 				<li><%= link_to '投稿する', new_post_path %></li>
 			</div>
 		</div>
-		<div id="sideBar" align="right">
+		<div class="sideBar" align="right">
 			<a href=""><img src=""></a>
-			<ul>
-				<li><a href="#trend">トレンド</a></li>
-				<li><a href="#like">お気に入り</a></li>
-				<li><a href="#tagFeed">タグフィード</a></li>
-				<li><a href="#userAccess">ユーザーアクセスランキング</a></li>
-				<li><a href="#tagRank">タグランキング</a></li>
-			</ul>
+			
+				<label for="Panel1">トレンド</label>
+				<input type="checkbox" id="Panel1" class="on-off" checked/>
+<!--					<li class="like"><a href="#trend">トレンド</a>-->
+					<ul>
+						<li>aaa</li>
+					</ul>
+			
+				<label for="Panel2">お気に入り</label>
+				<input type="checkbox" id="Panel2" class="on-off" checked/>
+<!--				<li class="like"><a href="#like">お気に入り</a>-->
+					<ul>
+						<li>aaa</li>
+					</ul>
+				
+				<label for="Panel3">タグフィード</label>
+				<input type="checkbox" id="Panel3" class="on-off" checked/>
+<!--				<li class="tagFeed"><a href="#tagFeed">タグフィード</a></li>-->
+					<ul>
+						<li>aaa</li>
+					</ul>
+		
+				<label for="Panel4">ユーザアクセスランキング</label>
+				<input type="checkbox" id="Panel4" class="on-off" checked/>		
+<!--				<li class="userAccess"><a href="#userAccess">ユーザーアクセスランキング
+</a>-->
+					<ul>
+						<li>aaa</li>
+					</ul>
+		
+				<label for="Panel5">タグランキング</label>
+				<input type="checkbox" id="Panel5" class="on-off" checked/>
+<!--				<li class="tagRank"><a href="#tagRank">タグランキング</a>-->
+					<ul>
+						<li>aaa</li>
+					</ul>
 		</div>
 		<main>
     	<%= yield %>
