@@ -3,30 +3,24 @@
 
 
 <table>
-  <thead>
+	<a class="side_by_side">
+  <thead　class="list">
     <tr>
-      <th>Name</th>
-      <th>Image</th>
+      <th>サービス名</th>
+      <th>TOP画像</th>
       <th>Body</th>
-      <th>Tec</th>
-      <th>Point</th>
-      <th>Link</th>
       <th colspan="3"></th>
     </tr>
   </thead>
-
+	</a>
+	
   <tbody>
     <% @posts.each do |post| %>
       <tr>
         <td><%= post.name %></td>
         <td><%= image_tag post.image.to_s, :size => "300x200" %></td>
         <td><%= post.body %></td>
-        <td><%= post.tec %></td>
-        <td><%= post.point %></td>
-        <td><%= post.link %></td>
         <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

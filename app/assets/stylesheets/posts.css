@@ -212,3 +212,10 @@ p.body{
 /*	text-align: center;*/
 	padding-left: 100px;
 }
+tr.list{
+  display: inline-block;
+  vertical-align: top;
+}
+.side_by_side{
+	display: block;
+}
