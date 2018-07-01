@@ -5,11 +5,11 @@ class User < ApplicationRecord
   def self.find_or_create_from_auth_hash(auth_hash)
 #OmniAuthで取得した各データを代入していく
     provider = auth_hash[:provider]
-    uid = auth_hash[:user_id]
+    uid = auth_hash[:id]
     nickname = auth_hash[:info][:nickname]
     image_url = auth_hash[:info][:image].to_s.sub('normal', 'bigger')
 
-    User.find_or_create_by(provider: provider, user_id: uid) do |user|
+    User.find_or_create_by(provider: provider, id: uid) do |user|
       user.nickname = nickname
       user.image_url = image_url
     end
