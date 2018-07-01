@@ -14,56 +14,57 @@
 <div class="form">
 	<table>
 			<tbody>
-				
+				<%= form_for @post do |f| %>
 					<div class="field">
 						<tr>
-							<th><%= form.label :TOP画像, class:"image_label" %></th>
-							<td><%= form.file_field :image, class:"image" %></td>
+							<th><%= f.label :TOP画像, class:"image_label" %></th>
+							<td><%= f.file_field :image, class:"image" %></td>
 						</tr>	
 					</div>
-				
-				
+
 				<tr>
 					<div class="field">
-						<th><%= form.label :サービス名 %></th>
-						<td><%= form.text_field :name, id: :post_name %></td>
+						<th><%= f.label :サービス名 %></th>
+						<td><%= f.text_field :name, id: :post_name %></td>
 					</div>
 				</tr>
 				
 				<tr>
 					<div class="field">
-						<th><%= form.label :どんなサービス？ %></th>
-						<td><%= form.text_area :body, id: :post_body %></td>
+						<th><%= f.label :どんなサービス？ %></th>
+						<td><%= f.text_area :body, id: :post_body %></td>
 					</div>
 				</tr>
 				
 				<tr>
 					<div class="field">
-						<th><%= form.label :どんな技術が使われている？ %></th>
-						<td><%= form.text_area :tec,size: "20×10",id: :post_tec %></td>
+						<th><%= f.label :どんな技術が使われている？ %></th>
+						<td><%= f.text_area :tec,size: "20×10",id: :post_tec %></td>
 					</div>
 				</tr>
 				
 				<tr>
 					<div class="field">
-						<th><%= form.label :どこがオススメ？ %></th>
-						<td><%= form.text_area :point, id: :post_point %></td>
+						<th><%= f.label :どこがオススメ？ %></th>
+						<td><%= f.text_area :point, id: :post_point %></td>
 					</div>
 				</tr>
 				
 				<tr>
 					<div class="field">
-						<th><%= form.label :LINK %></th>
-						<td><%= form.text_area :link, id: :post_link %></td>
+						<th><%= f.label :LINK %></th>
+						<td><%= f.text_area :link, id: :post_link %></td>
 					</div>
 				</tr>	
 				
 				<tr>
 					<div class="actions">
 						<th></th>
+						<% f.hidden_field :user_id, value: @user.id %>
 						<td><%= form.submit %></td>
 					</div>
 				</tr>
+			<% end %>
 		</tbody>
 	</table>				
 <% end %>
