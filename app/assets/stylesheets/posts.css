@@ -19,23 +19,22 @@ li .title{
 }
 
 .header{
-	height: 50px;
-	display: flex;
-	align-items: center;
-	border-bottom:solid;
-	padding: 0px 0px;
-	margin: 0 auto;
+	/* height: 50px; */
+	/* align-items: center; */
+	/* border-bottom:solid; */
+	/* padding: 0px 0px;
+	margin: 0 auto; */
 }
 
-.keyword{
+/* .keyword{
 	padding-left: 10px;
 	padding-right: 10px;
-}
+} */
 
-.head{
+/* .head{
 	padding-left: 600px;
 	padding-right: 50px;
-}
+} */
 
 main{
 	margin: 33px;
@@ -218,4 +217,13 @@ tr.list{
 }
 .side_by_side{
 	display: block;
+}
+.title{
+	color: #f0f0f0;
+}
+.navbar-right{
+	text-align: right;
+}
+a.navbar-brand{
+	font-size: 30px;
 }
