@@ -227,3 +227,11 @@ tr.list{
 a.navbar-brand{
 	font-size: 30px;
 }
+.user_info{
+	float:left;
+}
+.nickname{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
