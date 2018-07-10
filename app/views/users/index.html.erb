@@ -14,6 +14,18 @@
   <%= link_to 'Back', posts_path %> |
   <%= link_to 'Logout', logout_path %><br>
 </div>
+<div class="nickname">
+  <%= @user.nickname %>
+</div>
+
+<div class="nickname">
+  <button type="button" class="btn btn-primary btn-lg" onClick="window.open('https://twitter.com/watuyo_2')">Twitter: <%= @user.nickname %></button>
+  <button type="button" class="btn btn-primary btn-lg" onClick="window.open('https://github.com/tsu2626')">GitHub</button>
+  <button type="button" class="btn btn-primary btn-lg" onClick="window.open('https://qiita.com/watuyo_2')">Qita</button>
+
+</div>
+
+
 
 <% @posts.each do |post| %>
   <div class="col-sm-6 col-md-4">
