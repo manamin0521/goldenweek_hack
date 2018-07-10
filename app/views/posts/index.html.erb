@@ -8,12 +8,10 @@
         <% @posts.each do |post| %>
           <tr>
             <h3><td><%= post.name %></td></h3>
-            <td><%= image_tag post.image.to_s, :size => "300x200" %></td>
-            <td><%= post.body %></td>
-            
-          </tr>
-          <%= link_to '詳細', post %>
-          <p><a class="btn btn-primary" role="button">詳細</a></p>
+            <td><%= image_tag post.image.to_s, :size => "300x200" %></td><br>
+            <td><%= post.body %></td>    
+          </tr><br>
+          <%= link_to '詳細', post, :class => "btn btn-primary" %>
         <% end %>
         </div>
     </div>
