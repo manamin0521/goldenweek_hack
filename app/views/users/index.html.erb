@@ -12,7 +12,7 @@
   </p>
 
   <%= link_to 'Back', posts_path %> |
-  <%= link_to 'Logout', logout_path %><br>
+  <!--<%= link_to 'Logout', logout_path %><br>-->
 </div>
 <div class="nickname">
   <%= @user.nickname %>
@@ -24,13 +24,14 @@
   <button type="button" class="btn btn-primary btn-lg" onClick="window.open('https://github.com/tsu2626')">GitHub</button>
   <button type="button" class="btn btn-primary btn-lg" onClick="window.open('https://qiita.com/watuyo_2')">Qita</button>
 </div>
--->
+
 
 <div id="social-platforms">
 <a class="btn btn-icon btn-twitter" href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a>
 <a class="btn btn-icon btn-github" href="#"><i class="fa fa-github"></i><span>GitHub</span></a>
 <a class="btn btn-icon btn-qita" href="#"><i class="fa fa-qita"></i><span>Qita</span></a>
 </div>
+-->
 
 <% @posts.each do |post| %>
   <div class="col-sm-6 col-md-4">
