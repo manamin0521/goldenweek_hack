@@ -186,7 +186,6 @@ p {
 }
 p.name{
 	font-size: 30px;
-	width: 5000px;
 	text-align: center;
   padding: 20px;
   display: block;
@@ -195,11 +194,10 @@ p.name{
 }
 p.image{
 	padding-left: 100px;
-	float: left;
+	text-align: center;
 }
 
 p.body{
-	padding-left: 420px;
 /*
 	float: right;
 	padding-left: 30px;
@@ -208,6 +206,9 @@ p.body{
 .image_body{
 	overflow: hidden;
 }
+/* .image_body_outer{
+	
+} */
 .tec_point_link{
 	overflow: hidden;
 /*	text-align: center;*/

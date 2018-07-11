@@ -5,34 +5,33 @@
   <a><%= @post.name %></a>
 </p>
 
-<div class="image_body">
-	<p class="image">
-		<strong></strong>
-		<%= image_tag @post.image.to_s, :size => "300x200" %>
-	</p>	
-	<p class="body">
-		<strong></strong>
-		<%= @post.body %>
-	</p>
-	<p>
-		<strong>id:</strong>
-		<%= @post.user_id %>
-	</p>
+<div class="image_body_outer">
+	<div class="image_body">
+		<p class="image">
+			<strong></strong>
+			<%= image_tag @post.image.to_s, :size => "300x200" %>
+		</p>	
+	</div>
 </div>
 
 <div class="tec_point_link">
+	
+	<p class="body">
+		<strong>概要:</strong>
+		<%= @post.body %>
+	</p>
 	<p>
-		<strong>Tec:</strong>
+		<strong>技術、言語:</strong>
 		<%= @post.tec %>
 	</p>
 
 	<p>
-		<strong>Point:</strong>
+		<strong>おすすめ:</strong>
 		<%= @post.point %>
 	</p>
 
 	<p>
-		<strong>Link:</strong>
+		<strong>リンク:</strong>
 		<%= @post.link %>
 	</p>
 </div>
