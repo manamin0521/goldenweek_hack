@@ -17,8 +17,8 @@
 				<%= form_for @post do |f| %>
 					<div class="field">
 						<tr>
-							<th><%= f.label :TOP画像, class:"image_label" %></th>
-							<td><%= f.file_field :image, class:"image" %></td>
+							<th><%= f.label :TOP画像 %></th>
+							<td><%= f.file_field :image %></td>
 						</tr>	
 					</div>
 
@@ -60,7 +60,6 @@
 				<tr>
 					<div class="actions">
 						<th></th>
-						<% f.hidden_field :user_id, value: @user.id %>
 						<td><%= form.submit %></td>
 					</div>
 				</tr>
