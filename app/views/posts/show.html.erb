@@ -4,38 +4,43 @@
   <strong></strong>
   <a><%= @post.name %></a>
 </p>
-
-<div class="image_body">
-	<p class="image">
-		<strong></strong>
-		<%= image_tag @post.image_url.to_s, :size => "300x200" %>
-	</p>	
-	<p class="body">
-		<strong></strong>
-		<%= @post.body %>
-	</p>
-	<p>
-		<strong>id:</strong>
-		<%= @post.user_id %>
-	</p>
+<div class="edit">
+	<%= link_to 'Edit', edit_post_path(@post) %>
 </div>
 
-<div class="tec_point_link">
-	<p>
-		<strong>Tec:</strong>
-		<%= @post.tec %>
-	</p>
-
-	<p>
-		<strong>Point:</strong>
-		<%= @post.point %>
-	</p>
-
-	<p>
-		<strong>Link:</strong>
-		<%= @post.link %>
-	</p>
+<div class="image_body_outer">
+	<div class="image_body">
+		<p class="image">
+			<strong></strong>
+			<%= image_tag @post.image.to_s, :size => "300x200" %>
+		</p>	
+	</div>
 </div>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<div class="Overview">
+	<div class="tec_point_link">
+		
+		<p class="body">
+			<strong>概要:</strong>
+			<%= @post.body %>
+		</p>
+		<p>
+			<strong>技術、言語:</strong>
+			<%= @post.tec %>
+		</p>
+
+		<p>
+			<strong>おすすめ:</strong>
+			<%= @post.point %>
+		</p>
+
+		<p>
+			<strong>リンク:</strong>
+			<%= @post.link %>
+		</p>
+	</div>
+</div>
+
+<div class="back">
+	<%= link_to 'Back', posts_path %>
+</div>
