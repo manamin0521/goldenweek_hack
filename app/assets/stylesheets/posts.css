@@ -193,7 +193,7 @@ p.name{
   border: 1px solid #fff;
 }
 p.image{
-	padding-left: 100px;
+	padding-left: 0px;
 	text-align: center;
 }
 
@@ -212,8 +212,12 @@ p.body{
 .tec_point_link{
 	overflow: hidden;
 /*	text-align: center;*/
-	padding-left: 100px;
+	padding-left: 300px;
 }
+.Overview{
+	
+}
+
 tr.list{
   display: inline-block;
   vertical-align: top;
