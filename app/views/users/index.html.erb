@@ -2,14 +2,30 @@
 
 
 <p>
-  <%= image_tag @user.image_url.to_s, :size => "300x300" %>
+  <%= image_tag @user.image_url.to_s, :size => "80x80" %>
 </p>
 
+<div class="user_info">
 <p>
-  <strong>Name:</strong>
-  <%= @user.nickname %>
-</p>
+    <strong>Name:</strong>
+    <%= @user.nickname %>
+  </p>
 
+  <%= link_to 'Back', posts_path %> |
+  <%= link_to 'Logout', logout_path %><br>
+</div>
 
-<%= link_to 'Back', posts_path %> |
-<%= link_to 'Logout', logout_path %>
+<% @posts.each do |post| %>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+        <div class="caption">
+          <tr>
+            <h3><td><%= post.name %></td></h3>
+            <td><%= image_tag post.image.to_s, :size => "300x200" %></td><br>
+            <td><%= post.body %></td>    
+          </tr><br>
+        <%= link_to '詳細', post, :class => "btn btn-primary" %>
+    </div>
+  </div>
+</div>
+<% end %>
