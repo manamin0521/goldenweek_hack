@@ -48,8 +48,7 @@
 			</div>
 		</div>
 	</nav>
-	
-		<div class="sideBar" align="right">
+		<div class="sideBar">
 			<a href=""><img src=""></a>
 				<label for="Panel1">トレンド</label>
 				<input type="checkbox" id="Panel1" class="on-off" checked/>
@@ -95,9 +94,9 @@
 						<li>aaa</li>
 					</ul>
 		</div>
-		<main>
-    	<%= yield %>
-		</main>
 		<div class="clear"></div>
+	<main class="col-sm-8">
+		<%= yield %>
+	</main>
   </body>
 </html>
