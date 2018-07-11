@@ -11,5 +11,24 @@
 </p>
 
 
+<<<<<<< Updated upstream
 <%= link_to 'Back', posts_path %> |
 <%= link_to 'Logout', logout_path %>
+=======
+<div class="row">
+  <% @posts.each do |post| %>
+    <div class="col-sm-6">
+      <div class="thumbnail">
+        <div class="caption">
+          <tr>
+            <h3><td><%= post.name %></td></h3>
+            <td><%= image_tag post.image.to_s, :size => "300x200" %></td><br>
+            <td><%= post.body %></td>    
+          </tr><br>
+          <%= link_to '詳細', post, :class => "btn btn-primary" %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+>>>>>>> Stashed changes
