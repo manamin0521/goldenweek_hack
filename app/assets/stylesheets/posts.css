@@ -140,9 +140,10 @@ label {
   background: #333;
   color: #fff;
   padding: 10px;
-  display: block;
+  /* display: block; */
   margin: 0;
   border: 1px solid #fff;
+  width: 80%;
 }
 
 /*
