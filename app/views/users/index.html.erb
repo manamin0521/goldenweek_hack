@@ -6,21 +6,19 @@
 </p>
 
 <div class="user_info">
-  <p>
-      <strong>Name:</strong>
-      <%= @user.nickname %>
+<p>
+    <strong>Name:</strong>
+    <%= @user.nickname %>
   </p>
 
   <%= link_to 'Back', posts_path %> |
-  <!--<%= link_to 'Logout', logout_path %><br>-->
-
+  <%= link_to 'Logout', logout_path %><br>
 </div>
 <div class="nickname">
   <%= @user.nickname %>
 </div>
 
-<!--
-<div class="nickname">
+<!--<div class="nickname">
   <button type="button" class="btn btn-primary btn-lg" onClick="window.open('https://twitter.com/watuyo_2')">Twitter: <%= @user.nickname %></button>
   <button type="button" class="btn btn-primary btn-lg" onClick="window.open('https://github.com/tsu2626')">GitHub</button>
   <button type="button" class="btn btn-primary btn-lg" onClick="window.open('https://qiita.com/watuyo_2')">Qita</button>
@@ -28,25 +26,24 @@
 
 <div id="social-platforms">
 <a class="btn btn-icon btn-twitter" href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a>
-<a class="btn btn-icon btn-github" href="#"><i class="fa fa-github"></i><span>GitHub</span></a>
-<a class="btn btn-icon btn-qita" href="#"><i class="fa fa-qita"></i><span>Qita</span></a>
-</div>
--->
+<a class="btn btn-icon btn-github" href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a>
 
-<div class="row">
+</div>-->
+
+
+<div class="thumbnail_body">
   <% @posts.each do |post| %>
     <div class="col-sm-6">
       <div class="thumbnail">
-        <div class="caption">
-          <tr>
-            <h3><td><%= post.name %></td></h3>
-            <td><%= image_tag post.image.to_s, :size => "300x200" %></td><br>
-            <td><%= post.body %></td>    
-          </tr><br>
+          <div class="caption">
+            <tr>
+              <h3><td><%= post.name %></td></h3>
+              <td><%= image_tag post.image.to_s, :size => "300x200" %></td><br>
+              <td><%= post.body %></td>    
+            </tr><br>
           <%= link_to '詳細', post, :class => "btn btn-primary" %>
         </div>
       </div>
     </div>
   <% end %>
-  </div>
 </div>
