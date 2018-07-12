@@ -246,6 +246,14 @@ tr.list{
 a.navbar-brand{
 	font-size: 30px;
 }
+
+.navbar_right{
+	/* text-align: right; */
+}
+.ul-right{
+	text-align: right;
+}
+
 .user_info{
 	float:left;
 }
