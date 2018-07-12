@@ -15,13 +15,13 @@ class ApplicationController < ActionController::Base
 
     def posts_ranking
       # if @posts
-        @posts = Post.all
+        @posts_ranking = Post.all
       # end
     end
 
     def users_ranking
       # if @users
-        @users = User.all
+        @users_ranking = User.all
       # end
     end
 end

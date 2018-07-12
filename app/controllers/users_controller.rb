@@ -2,6 +2,6 @@ class UsersController < ApplicationController
   
   def index
     @user = User.find_by(id: session[:user_id])
-    @posts
+    @posts = @user.posts
   end
 end
