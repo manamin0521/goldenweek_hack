@@ -35,21 +35,12 @@
   <% @posts.each do |post| %>
     <div class="col-sm-6">
       <div class="thumbnail">
-<<<<<<< HEAD
         <div class="caption">
           <tr>
             <h3><td><%= post.name %></td></h3>
             <td><%= image_tag post.image_url.to_s, :size => "300x200" %></td><br>
             <td><%= post.body %></td>    
           </tr><br>
-=======
-          <div class="caption">
-            <tr>
-              <h3><td><%= post.name %></td></h3>
-              <td><%= image_tag post.image.to_s, :size => "300x200" %></td><br>
-              <td><%= post.body %></td>    
-            </tr><br>
->>>>>>> ac3d62e46209badc14a207e28420cb78e6ae344f
           <%= link_to '詳細', post, :class => "btn btn-primary" %>
         </div>
       </div>
