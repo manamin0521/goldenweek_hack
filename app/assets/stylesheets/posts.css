@@ -251,9 +251,9 @@ a.navbar-brand{
 }
 .nickname{
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 30px;
+	justify-content: left;
+	align-items: left;
+	font-size: 20px;
 	margin-bottom: 30px;
   }
 

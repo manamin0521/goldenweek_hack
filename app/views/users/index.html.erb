@@ -1,21 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-
-<p>
+<div class="col-sm-4">
   <%= image_tag @user.image_url.to_s, :size => "200x200" %>
-</p>
-
-<div class="user_info">
-  <p>
-    <strong>@</strong>
-    <%= @user.nickname %>
-  </p>
   <!--<%= link_to 'Back', posts_path %> |
   <%= link_to 'Logout', logout_path %><br>-->
-</div>
 
-<div class="nickname">
-  <%= @user.nickname %>
+  <div class="nickname">
+    <strong>@<?strong>
+    <%= @user.nickname %>
+  </div>
 </div>
 
 <!--<div class="nickname">
@@ -30,10 +23,9 @@
 
 </div>-->
 
-
-<div class="thumbnail_body">
-  <% @posts.each do |post| %>
-    <div class="col-sm-6">
+<div class="col-sm-6">
+  <div class="thumbnail_body">
+    <% @posts.each do |post| %>
       <div class="thumbnail">
         <div class="caption">
           <tr>
