@@ -253,7 +253,7 @@ a.navbar-brand{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 80px;
+	font-size: 30px;
 	margin-bottom: 30px;
   }
 
@@ -432,4 +432,8 @@ h1 {font-size:1.5em;margin-bottom:55px;}
 
 li .logout{
  color: white; 
+}
+
+.profile{
+  padding: 30px;
 }

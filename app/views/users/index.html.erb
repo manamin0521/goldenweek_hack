@@ -2,18 +2,18 @@
 
 
 <p>
-  <%= image_tag @user.image_url.to_s, :size => "80x80" %>
+  <%= image_tag @user.image_url.to_s, :size => "200x200" %>
 </p>
 
 <div class="user_info">
-<p>
-    <strong>Name:</strong>
+  <p>
+    <strong>@</strong>
     <%= @user.nickname %>
   </p>
-
-  <%= link_to 'Back', posts_path %> |
-  <%= link_to 'Logout', logout_path %><br>
+  <!--<%= link_to 'Back', posts_path %> |
+  <%= link_to 'Logout', logout_path %><br>-->
 </div>
+
 <div class="nickname">
   <%= @user.nickname %>
 </div>
