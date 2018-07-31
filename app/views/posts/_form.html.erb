@@ -14,7 +14,7 @@
 <div class="form">
 	<table>
 			<tbody>
-				<%= form_for @post do |f| %>
+				<%= form_for(@post, html: { multipart: true }) do |f| %>
 					<div class="field">
 						<tr>
 							<th><%= f.label :TOP画像 %></th>
