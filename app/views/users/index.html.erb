@@ -44,8 +44,8 @@
   </div>-->
 
   <div class="post float">
-   <div class="">
-    <% @posts.each do |post| %> 
+    <% @posts.each do |post| %>
+      <div class="col-sm-6"> 
         <div class="thumbnail">
             <tr>
               <h3><td><%= post.name %></td></h3>
@@ -53,6 +53,7 @@
               <td><%= post.body %></td>    
             </tr><br>
             <%= link_to '詳細', post, :class => "btn btn-primary" %>
+          </div>
         </div>
     <% end %>
     </div>
