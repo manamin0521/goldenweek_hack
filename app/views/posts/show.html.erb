@@ -25,21 +25,21 @@
 		
 		<p class="body">
 			<strong>概要:</strong>
-			<%= @post.body %>
+			<%= simple_format(@post.body) %>
 		</p>
 		<p>
 			<strong>技術、言語:</strong>
-			<%= @post.tec %>
+			<%= simple_format(@post.tec) %>
 		</p>
 
 		<p>
 			<strong>おすすめ:</strong>
-			<%= @post.point %>
+			<%= simple_format(@post.point) %>
 		</p>
 
 		<p>
 			<strong>リンク:</strong>
-			<%= @post.link %>
+			<a href="<%= @post.link %>"><%= @post.link %></a>
 		</p>
 	</div>
 </div>
