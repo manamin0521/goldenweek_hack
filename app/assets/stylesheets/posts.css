@@ -181,9 +181,9 @@ input[type="checkbox"].on-off:checked + ul{
   height: 200px;
 }
 
-.thumbnail_body{
+/* .thumbnail_body{
 	padding-right: 100px;
-}
+} */
 
 p {
 	
