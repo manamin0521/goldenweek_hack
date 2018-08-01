@@ -33,6 +33,7 @@ gem 'jbuilder', '~> 2.5'
 # Image Uploader
 gem 'carrierwave'
 gem 'rmagick', require: 'RMagick'
+gem 'mini_magick'
 
 gem 'omniauth'
 gem 'omniauth-twitter'
