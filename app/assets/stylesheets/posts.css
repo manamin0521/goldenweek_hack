@@ -181,13 +181,6 @@ input[type="checkbox"].on-off:checked + ul{
   height: 200px;
 }
 
-.thumbnail_body{
-	padding-right: 100px;
-}
-
-p {
-	
-}
 p.name{
 	font-size: 30px;
 	text-align: center;
@@ -434,6 +427,21 @@ li .logout{
  color: white; 
 }
 
-.profile{
+.profile_parts{
   font-size: 2px;
 }
+
+.profile{
+  height: 1000px;
+  width: 300px;
+}
+.post{
+  width:600px;
+}
+.float{
+  float: left;
+}
+.width{
+  float: left;
+  width: 300px;
+} 
