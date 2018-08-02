@@ -445,3 +445,11 @@ li .logout{
   float: left;
   width: 300px;
 } 
+.post_float{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width:100px;
+  height:100px;
+}

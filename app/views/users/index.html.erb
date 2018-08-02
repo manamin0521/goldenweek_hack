@@ -43,19 +43,21 @@
 
   </div>-->
 
-  <div class="post float">
-    <% @posts.each do |post| %>
-      <div class="col-sm-6"> 
-        <div class="thumbnail">
-            <tr>
-              <h3><td><%= post.name %></td></h3>
-              <td><%= image_tag post.image_url.to_s, :size => "300x200" %></td><br>
-              <td><%= post.body %></td>    
-            </tr><br>
-            <%= link_to '詳細', post, :class => "btn btn-primary" %>
+  <div class="post_float">
+    <div class="post float">
+      <% @posts.each do |post| %>
+        <div class="col-sm-6"> 
+          <div class="thumbnail">
+              <tr>
+                <h3><td><%= post.name %></td></h3>
+                <td><%= image_tag post.image_url.to_s, :size => "300x200" %></td><br>
+                <td><%= post.body %></td>    
+              </tr><br>
+              <%= link_to '詳細', post, :class => "btn btn-primary" %>
+            </div>
           </div>
-        </div>
-    <% end %>
+      <% end %>
+      </div>
     </div>
   </div>
 </div>
